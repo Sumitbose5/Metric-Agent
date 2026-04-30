@@ -1,0 +1,94 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.env/
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Mypy / type checkers
+.mypy_cache/
+.pyre/
+
+# Logs and local runtime files
+*.log
+logs/
+*.pid
+*.sock
+
+# dotenv / secret files
+.env
+.env.*
+.envrc
+secrets.json
+local_settings.py
+instance/
+
+# Databases
+*.sqlite3
+*.db
+*.db-journal
+
+# Static / build artifacts
+static/
+staticfiles/
+build/
+dist/
+
+# Alembic migrations: keep source, ignore compiled caches
+alembic/versions/__pycache__/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node / frontend (if present)
+node_modules/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Docker overrides / local compose
+docker-compose.override.yml
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Wheels
+*.whl
