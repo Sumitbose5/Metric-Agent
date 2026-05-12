@@ -3,6 +3,7 @@ import uvicorn
 from fastapi import FastAPI
 from livekit.agents import AgentServer, JobContext
 from app.api.routes import router
+import os
 
 from dotenv import load_dotenv
 
@@ -27,7 +28,7 @@ def health():
     return {"status": "ok"}
 
 async def run_services():
-    config = uvicorn.Config(app, host="0.0.0.0", port=8000, loop="asyncio")
+    config = uvicorn.Config(app, host="0.0.0.0", port=int(os.getenv("PORT", 8000)), loop="asyncio")
     uvicorn_server = uvicorn.Server(config)
 
     print("🚀 Metric Backend: FastAPI + LiveKit AgentServer starting...")
