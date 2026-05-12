@@ -201,7 +201,8 @@ VOICE OUTPUT RULES:
         user_id = metadata["userId"]
 
         # 2. Define API endpoint and query parameters
-        url = "http://localhost:3000/api/interview/question"
+        base_url = os.getenv("API_BASE_URL", "http://localhost:3000/api")
+        url = f"{base_url}/interview/question"
         params = {
             "userId": user_id,
             "interviewId": interview_id
